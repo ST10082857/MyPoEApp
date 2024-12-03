@@ -1,62 +1,121 @@
 # MyPoEApp - Fitness & Workout Tracking App
 
-<img src="app/src/main/res/drawable/app_logo.xml" width="100" height="100" alt="App Logo">
+<div align="center">
+  <img src="app/src/main/res/drawable/app_logo.xml" width="120" height="120" alt="MyPoEApp Logo">
+</div>
 
-## Description
-MyPoEApp is a modern fitness tracking application built with Kotlin for Android. It helps users maintain their fitness journey by tracking workouts, monitoring nutrition, and setting achievable fitness goals. The app features a clean, Material Design interface and secure authentication options.
+## Project Description
+MyPoEApp is a comprehensive fitness tracking application developed as part of my Portfolio of Evidence (POE). The app helps users maintain their fitness journey by providing features for workout tracking, nutrition monitoring, and goal setting, all while implementing modern Android development practices and secure authentication methods.
 
-## Key Features
+## Features
 
-����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������
+### Authentication & Security
+- Google Sign-In Integration
+- Biometric Authentication (Fingerprint/Face Recognition)
+- Secure Email/Password Registration
+- Firebase Authentication Backend
 
-2. Open the project in Android Studio
+### Workout Features
+- Real-time GPS Workout Tracking
+- Multiple Workout Types:
+  - Running
+  - Walking
+  - Cycling
+  - Strength Training
+- Detailed Statistics:
+  - Distance
+  - Pace
+  - Calories Burned
+  - Route Mapping
 
-3. Create a Firebase project and add your `google-services.json`
+### Nutrition Tracking
+- Daily Meal Logging
+- Nutritional Information Database
+- Macro Tracking (Protein, Carbs, Fats)
+- Calorie Monitoring
+- Custom Meal Creation
 
-4. Build and run the app
+### Goal Management
+- Customizable Fitness Goals
+- Progress Tracking
+- Achievement System
+- Regular Progress Updates
 
-## Tech Stack
-- 💻 **Language**: Kotlin
-- 🏗 **Architecture**: MVVM
-- 🗄️ **Database**: Room
-- 🔥 **Backend**: Firebase
-- 🎨 **UI**: Material Design 3
+## Technical Implementation
 
-## Libraries Used
-- AndroidX Components
-- Firebase Authentication
-- Google Play Services
+### Architecture & Design
+- MVVM Architecture Pattern
+- Material Design 3 UI Components
+- Repository Pattern for Data Management
+- Clean Architecture Principles
+
+### Technologies Used
+- Kotlin Programming Language
+- Android Jetpack Components
+- Firebase Services
+- Room Database
+- Google Maps Integration
 - Biometric Authentication
-- ViewPager2
-- Material Components
-- Glide
-- Kotlin Coroutines
 
-## Requirements
+## Setup & Installation
+
+### Prerequisites
 - Android Studio Hedgehog | 2023.1.1 or newer
-- Min SDK 27 (Android 8.1)
-- Target SDK 34 (Android 14)
+- JDK 11 or higher
+- Android SDK with minimum API 27
 - Google Play Services
-- Device with biometric capabilities (optional)
+- Firebase Account
 
-## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+### Installation Steps
+1. Clone the repository
+```bash
+git clone https://github.com/ST10082857/MyPoEApp.git
+```
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+2. Open project in Android Studio
+
+3. Configure Firebase:
+   - Add your `google-services.json`
+   - Enable Authentication services
+   - Set up Firestore Database
+
+4. Build and run the application
+
+## Project Structure
+```
+app/
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/mypoeapp/
+│   │   │   ├── api/          # API and network calls
+│   │   │   ├── data/         # Data models and database
+│   │   │   ├── ui/           # UI components
+│   │   │   ├── services/     # Background services
+│   │   │   └── utils/        # Utility classes
+│   │   └── res/              # Resources
+│   └── test/                 # Unit tests
+└── build.gradle.kts          # Project configuration
+```
+
+## Testing
+- Unit Tests for ViewModels and Repository
+- UI Tests for Critical User Flows
+- Integration Tests for Database Operations
+
+## Future Enhancements
+- Social Features & Sharing
+- Advanced Analytics Dashboard
+- Workout Plan Recommendations
+- Integration with Wearable Devices
+
+## Author
+- **Name:** Mushfeeq Hartnick
+- **Student Number:** ST10082857
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-
-Project Link: [https://github.com/yourusername/MyPoEApp](https://github.com/yourusername/MyPoEApp)
-
 ## Acknowledgments
-- Material Design Icons
+- Android Development Team
 - Firebase Documentation
-- Android Developer Documentation
+- Material Design Guidelines
